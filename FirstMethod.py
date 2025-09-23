@@ -9,9 +9,6 @@ import re
 # Cohere klijent
 co = cohere.ClientV2("cohere key value")
 
-# Trial klijent
-# co = cohere.ClientV2("sWQIbobLHntVOx0wtOB9IwV4S7MNrOupjvFFi5Gl")
-
 # --- Skup zamjenica (lowercase) ---
 PRONOUNS = {
     "i","me","myself","my","mine",
@@ -264,4 +261,5 @@ with open(triplets_file, "a", encoding="utf-8", newline="") as csvfile, \
 
 print(f"\nSaved good triplets to {triplets_file}")
 print(f"Saved bad triplets to {bad_triplets_file}")
+
 
